@@ -10,3 +10,4 @@ linux-components/silver-searcher-from-source
 linux-components/rbenv
 common-components/ruby-environment
 linux-components/heroku
+linux-components/rcm

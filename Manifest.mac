@@ -10,3 +10,4 @@ mac-components/rbenv
 mac-components/compiler-and-libraries
 common-components/ruby-environment
 mac-components/heroku
+mac-components/rcm
