@@ -17,6 +17,10 @@ if [ ! -d "$HOME/.bin/" ]; then
   mkdir "$HOME/.bin"
 fi
 
+if [ ! -f "$HOME/.zshrc" ]; then
+  touch $HOME/.zshrc
+fi
+
 if [[ ":$PATH:" != *":$HOME/.bin:"* ]]; then
   echo 'export PATH="$HOME/.bin:$PATH"' >> ~/.zshrc
   source ~/.zshrc
@@ -108,8 +112,10 @@ fancy_echo "Upgrading and linking OpenSSL ..."
 export CC=gcc-4.2
 ### end mac-components/compiler-and-libraries
 
-fancy_echo "Installing Ruby 2.0.0-p247 ..."
-  rbenv install 2.0.0-p247
+if ! (rbenv versions | grep -q '2.0.0-p247'); then
+  fancy_echo "Installing Ruby 2.0.0-p247 ..."
+    rbenv install 2.0.0-p247
+fi
 
 fancy_echo "Setting Ruby 2.0.0-p247 as global default Ruby ..."
   rbenv global 2.0.0-p247

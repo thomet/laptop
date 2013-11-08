@@ -1,5 +1,7 @@
-fancy_echo "Installing Ruby 2.0.0-p247 ..."
-  rbenv install 2.0.0-p247
+if ! (rbenv versions | grep -q '2.0.0-p247'); then
+  fancy_echo "Installing Ruby 2.0.0-p247 ..."
+    rbenv install 2.0.0-p247
+fi
 
 fancy_echo "Setting Ruby 2.0.0-p247 as global default Ruby ..."
   rbenv global 2.0.0-p247
