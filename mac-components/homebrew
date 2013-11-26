@@ -1,4 +1,4 @@
-if (( $+commands[brew] )); then
+if ! which brew &>/dev/null; then
   fancy_echo "Installing Homebrew, a good OS X package manager ..."
     ruby <(curl -fsS https://raw.github.com/mxcl/homebrew/go/install)
     brew update
