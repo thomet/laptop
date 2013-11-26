@@ -11,7 +11,9 @@ fancy_echo "Installing rbenv, to change Ruby versions ..."
     eval "$(rbenv init -)"
 
 fancy_echo "Installing rbenv-gem-rehash so the shell automatically picks up binaries after installing gems with binaries..."
-  git clone https://github.com/sstephenson/rbenv-gem-rehash.git ~/.rbenv/plugins/rbenv-gem-rehash
+  git clone https://github.com/sstephenson/rbenv-gem-rehash.git \
+    ~/.rbenv/plugins/rbenv-gem-rehash
 
 fancy_echo "Installing ruby-build, to install Rubies ..."
-  git clone git://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
+  git clone git://github.com/sstephenson/ruby-build.git \
+    ~/.rbenv/plugins/ruby-build
