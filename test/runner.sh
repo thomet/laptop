@@ -26,13 +26,10 @@ for vagrantfile in test/Vagrantfile.*; do
 
   # TODO: Create a Vagrantfile.mac that uses VMWare Fusion to run OSX
   if echo "$vagrantfile" | grep -q '\.mac$'; then
-    vagrant ssh -c 'echo vagrant | zsh /vagrant/mac' \
+    vagrant ssh -c 'echo vagrant | bash /vagrant/mac' \
       || failure 'Installation script failed to run'
   else
-    vagrant ssh -c 'echo vagrant | sh /vagrant/linux-prerequisites' \
-      || failure 'Prerequisite script failed to run'
-
-    vagrant ssh -c 'zsh /vagrant/linux' \
+    vagrant ssh -c 'echo vagrant | bash /vagrant/linux' \
       || failure 'Installation script failed to run'
   fi
 
