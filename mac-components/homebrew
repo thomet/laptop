@@ -5,9 +5,13 @@ if (( $+commands[brew] )); then
 
   if ! grep -qs "recommended by brew doctor" ~/.zshrc; then
     fancy_echo "Put Homebrew location earlier in PATH ..."
-      echo "\n# recommended by brew doctor" >> ~/.zshrc
-      echo "export PATH=\"/usr/local/bin:\$PATH\"\n" >> ~/.zshrc
-      source ~/.zshrc
+      cat >> ~/.zshrc <<EOF
+
+# recommended by brew doctor
+export PATH="/usr/local/bin:\$PATH"
+EOF
+
+      export PATH="/usr/local/bin:$PATH"
   fi
 else
   fancy_echo "Homebrew already installed. Skipping ..."
