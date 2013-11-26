@@ -1,16 +1,16 @@
 #!/bin/sh
 
-for MANIFEST in Manifest.*; do
-  FILENAME=$(printf "$MANIFEST" | sed s/Manifest\.//)
-  rm -f "$FILENAME"
+for manifest in Manifest.*; do
+  filename=$(printf "$manifest" | sed s/Manifest\.//)
+  rm -f "$filename"
 
-  printf "\nBuilding $MANIFEST into $FILENAME\n"
+  printf "\nBuilding %s into %s\n" "$manifest" "$filename"
 
   while read file; do
-    printf "Including: $file\n"
+    printf "Including: %s\n" "$file"
 
-    cat "$file" >> "$FILENAME"
+    cat "$file" >> "$filename"
 
-    printf "### end $file\n\n" >> "$FILENAME"
-  done < "$MANIFEST"
+    printf "### end %s\n\n" "$file" >> "$filename"
+  done < "$manifest"
 done
