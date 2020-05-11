@@ -190,7 +190,7 @@ fancy_echo "Updating Homebrew formulas ..."
 fancy_echo "Cleanup dock ..."
   defaults write com.apple.dock show-recents -bool no
   defaults write com.apple.dock recent-apps -array
-  dockutil --remove all
+
 ### end mac-components/cleanup-dock
 
 brew_install_or_upgrade 'zsh'
@@ -217,6 +217,8 @@ brew_cask_install 'spectacle'
 brew_cask_install 'sequel-pro'
 brew_cask_install 'silverlight'
 brew_cask_install 'virtualbox'
+
+dockutil --remove all
 
 brew_cask_install 'google-chrome'
 dockutil --add /Applications/Google\ Chrome.app --no-restart

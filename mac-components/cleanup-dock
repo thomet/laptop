@@ -1,4 +1,4 @@
 fancy_echo "Cleanup dock ..."
   defaults write com.apple.dock show-recents -bool no
   defaults write com.apple.dock recent-apps -array
-  dockutil --remove all
+
