@@ -23,6 +23,8 @@ brew_cask_install 'sequel-pro'
 brew_cask_install 'silverlight'
 brew_cask_install 'virtualbox'
 
+dockutil --remove all
+
 brew_cask_install 'google-chrome'
 dockutil --add /Applications/Google\ Chrome.app --no-restart
 brew_cask_install 'firefox'
