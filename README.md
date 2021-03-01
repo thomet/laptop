@@ -18,7 +18,46 @@ Read, then run the script:
 What it sets up
 ---------------
 
-TODO: add list
+- Install apple command line tools
+- Setup zsh as default shell
+- Install [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh) as zsh configuration manager
+- Install [brew](https://brew.sh/) packet manager
+- Remove recent folder from MacOs Dock
+- Remove recent apps from MacOs Dock
+- Install newest zsh
+- Install git
+- Install [the_silver_searcher](https://github.com/ggreer/the_silver_searcher)
+- Install newest vim
+- Install ctags
+- Install dockfuti
+- lnstall docker
+- Install docker-machine
+- Install docker-machine-nfs
+- Install docker-compose
+- Install [git-extras](https://github.com/tj/git-extras)
+- Install htop-osx
+- Install wget
+- Install source-highlight
+- Install dnsmasq
+- Install [asdf](https://github.com/asdf-vm/asdf) (Manage multiple runtime versions)
+- Install awscli
+- Install gpg
+- Install [tmate](https://tmate.io/)
+- Install docker-credential-helper-ecr
+- Instal caffeine
+- Install spectacle
+- Install sequel-pro
+- Install silverlight
+- Install virtualbox
+- Clean Dock
+- Install Google Chrome and add to Dock
+- Install Firefox and add to Dock
+- Install Rubymine and add to Dock
+- Install Atom and add to Dock
+- Install iTerm2 and add to Dock
+- Install [rcm](https://github.com/thoughtbot/rcm) dotfile manager
+- Setup Docker with docker-machine and virtual box using NFS
+- Setup dnsmasq to redirect all *.dev.sageone.com request to docker
 
 It should take less than 1 hour to install (depends on your machine).
 
@@ -33,10 +72,10 @@ Put your customizations in `~/.laptop.local`. For example, your
 `~/.laptop.local` might look like this:
 
     #!/bin/sh
-
+    
     brew tap caskroom/cask
     brew install brew-cask
-
+    
     brew cask install dropbox
     brew cask install google-chrome
     brew cask install rdio
@@ -53,14 +92,3 @@ Laptop is maintained and funded by [thoughtbot, inc](http://thoughtbot.com/commu
 The names and logos for thoughtbot are trademarks of thoughtbot, inc.
 
 Thank you, [contributors](https://github.com/thoughtbot/laptop/graphs/contributors)!
-
-Contributing
-------------
-
-Please see [CONTRIBUTING.md](https://github.com/thomet/laptop/blob/master/CONTRIBUTING.md).
-
-License
--------
-
-Laptop is © 2011-2014 thoughtbot, inc. It is free software, and may be
-redistributed under the terms specified in the LICENSE file.
