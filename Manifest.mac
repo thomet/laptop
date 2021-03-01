@@ -8,7 +8,6 @@ mac-components/command-line-tools
 common-components/zsh
 mac-components/mac-functions
 common-components/oh-my-zsh
-common-components/janus-vim
 mac-components/zsh-fix
 mac-components/homebrew
 mac-components/cleanup-dock
