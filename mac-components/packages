@@ -26,8 +26,8 @@ brew_cask_install 'virtualbox'
 
 dockutil --remove all
 
-brew_cask_install 'google-chrome'
-dockutil --add /Applications/Google\ Chrome.app --no-restart
+brew_cask_install 'brave-browser'
+dockutil --add /Applications/Brave\ Browser.app --no-restart
 brew_cask_install 'firefox'
 dockutil --add /Applications/Firefox.app --no-restart
 brew_cask_install 'slack'

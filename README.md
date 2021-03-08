@@ -50,7 +50,7 @@ What it sets up
 - Install silverlight
 - Install virtualbox
 - Clean Dock
-- Install Google Chrome and add to Dock
+- Install Brave Browser and add to Dock
 - Install Firefox and add to Dock
 - Install Rubymine and add to Dock
 - Install Atom and add to Dock
