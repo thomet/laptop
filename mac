@@ -78,11 +78,6 @@ case "$SHELL" in
 esac
 ### end common-components/zsh
 
-brew_cask_install() {
-  fancy_echo "Installing %s ..." "$1"
-  brew cask install "$@"
-}
-
 brew_install_or_upgrade() {
   if brew_is_installed "$1"; then
     if brew_is_upgradable "$1"; then
@@ -174,9 +169,6 @@ else
   fancy_echo "Homebrew already installed. Skipping ..."
 fi
 
-fancy_echo "Install brew cask ..."
-  brew_install_or_upgrade 'homebrew/cask'
-
 fancy_echo "Updating Homebrew formulas ..."
   brew update
 ### end mac-components/homebrew
@@ -207,25 +199,25 @@ brew_install_or_upgrade 'awscli'
 brew_install_or_upgrade 'gpg'
 brew_install_or_upgrade 'tmate'
 brew_install_or_upgrade 'docker-credential-helper-ecr'
-brew_cask_install 'caffeine'
-brew_cask_install 'spectacle'
-brew_cask_install 'sequel-pro'
-brew_cask_install 'silverlight'
-brew_cask_install 'virtualbox'
+brew_install_or_upgrade 'caffeine'
+brew_install_or_upgrade 'spectacle'
+brew_install_or_upgrade 'sequel-pro'
+brew_install_or_upgrade 'silverlight'
+brew_install_or_upgrade 'virtualbox'
 
 dockutil --remove all
 
-brew_cask_install 'brave-browser'
+brew_install_or_upgrade 'brave-browser'
 dockutil --add /Applications/Brave\ Browser.app --no-restart
-brew_cask_install 'firefox'
+brew_install_or_upgrade 'firefox'
 dockutil --add /Applications/Firefox.app --no-restart
-brew_cask_install 'slack'
+brew_install_or_upgrade 'slack'
 dockutil --add /Applications/Slack.app --no-restart
-brew_cask_install 'rubymine'
+brew_install_or_upgrade 'rubymine'
 dockutil --add /Applications/RubyMine.app --no-restart
-brew_cask_install 'atom'
+brew_install_or_upgrade 'atom'
 dockutil --add /Applications/Atom.app --no-restart
-brew_cask_install 'iterm2'
+brew_install_or_upgrade 'iterm2'
 dockutil --add /Applications/iTerm.app
 ### end mac-components/packages
 

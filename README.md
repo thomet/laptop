@@ -29,7 +29,7 @@ What it sets up
 - Install [the_silver_searcher](https://github.com/ggreer/the_silver_searcher)
 - Install newest vim
 - Install ctags
-- Install dockfuti
+- Install dockutil
 - lnstall docker
 - Install docker-machine
 - Install docker-machine-nfs
@@ -44,7 +44,7 @@ What it sets up
 - Install gpg
 - Install [tmate](https://tmate.io/)
 - Install docker-credential-helper-ecr
-- Instal caffeine
+- Install caffeine
 - Install spectacle
 - Install sequel-pro
 - Install silverlight
@@ -73,15 +73,12 @@ Put your customizations in `~/.laptop.local`. For example, your
 
     #!/bin/sh
     
-    brew tap caskroom/cask
-    brew install brew-cask
-    
-    brew cask install dropbox
-    brew cask install google-chrome
-    brew cask install rdio
+    brew install dropbox
+    brew install google-chrome
+    brew install rdio
 
 You should write your customizations such that they can be run safely more than
-once. See the `mac` and `linux` scripts for examples.
+once. See the `mac` script for examples.
 
 Credits
 -------

@@ -13,8 +13,5 @@ else
   fancy_echo "Homebrew already installed. Skipping ..."
 fi
 
-fancy_echo "Install brew cask ..."
-  brew_install_or_upgrade 'homebrew/cask'
-
 fancy_echo "Updating Homebrew formulas ..."
   brew update
