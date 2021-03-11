@@ -23,6 +23,8 @@ brew_install_or_upgrade 'spectacle'
 brew_install_or_upgrade 'sequel-pro'
 brew_install_or_upgrade 'silverlight'
 brew_install_or_upgrade 'virtualbox'
+brew_install_or_upgrade 'gpg'
+brew_install_or_upgrade 'pinentry-mac'
 
 dockutil --remove all
 

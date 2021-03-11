@@ -49,6 +49,8 @@ What it sets up
 - Install sequel-pro
 - Install silverlight
 - Install virtualbox
+- Install gpg
+- Install pinentry-mac
 - Clean Dock
 - Install Brave Browser and add to Dock
 - Install Firefox and add to Dock
