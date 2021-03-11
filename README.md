@@ -50,7 +50,7 @@ What it sets up
 - Install silverlight
 - Install virtualbox
 - Install gpg
-- Install pinentry-mac
+- Install gpg-suite
 - Clean Dock
 - Install Brave Browser and add to Dock
 - Install Firefox and add to Dock
